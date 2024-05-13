@@ -30,7 +30,7 @@ public class PickObject : MonoBehaviour
             if (pickedObject != null)
             {
                 Debug.Log("hola");
-                Destroy(playerGun); // Llama a la función ReleaseObject para soltar el objeto
+                playerGun.SetActive(false); // Llama a la función ReleaseObject para soltar el objeto
             }
             if (PickUpPicker == true)
             {
@@ -45,7 +45,6 @@ public class PickObject : MonoBehaviour
             canPickupObject = true; // Establece canPickupObject en true
         }       
     }
-
     private void OnTriggerStay(Collider other)
     {
         // Si podemos recoger un objeto y presionamos la tecla "E" y no tenemos ningún objeto recogido
@@ -83,6 +82,7 @@ public class PickObject : MonoBehaviour
             gun.haveGUN = true; // Establece la variable haveGUN del componente SystemGun en true
                                 // Activar la pistola del jugador
             playerGun.SetActive(true); // Activa el GameObject playerGun
+            pickedObject = other.gameObject; // Asigna el objeto colisionado a pickedObject
         }
     }
 
