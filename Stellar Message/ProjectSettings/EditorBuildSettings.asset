@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz.unity
     guid: 01bd9b1865d22ce479d0d7c480c968d1
+  - enabled: 1
+    path: Assets/Scenes/LosePanel.unity
+    guid: 1effa911177168545b8fbccd3df4c9be
   m_configObjects: {}
