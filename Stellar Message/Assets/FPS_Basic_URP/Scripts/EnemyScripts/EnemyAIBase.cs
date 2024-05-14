@@ -97,7 +97,15 @@ public class EnemyAIBase : MonoBehaviour
     {
         //Una vez detecta el target, lo persigue
         agent.SetDestination(target.position);
-        
+        // Calcular la dirección hacia el jugador
+        Vector3 directionToTarget = (target.position - transform.position).normalized;
+
+        // Calcular la rotación necesaria para mirar hacia el jugador
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToTarget.x, 0, directionToTarget.z));
+
+        // Aplicar la rotación gradualmente
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * agent.angularSpeed);
+
     }
 
     void AttackTarget()
