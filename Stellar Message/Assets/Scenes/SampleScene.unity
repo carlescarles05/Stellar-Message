@@ -1167,6 +1167,7 @@ GameObject:
   - component: {fileID: 102979401}
   - component: {fileID: 102979403}
   - component: {fileID: 102979404}
+  - component: {fileID: 102979405}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1606,6 +1607,18 @@ MonoBehaviour:
   handPoint: {fileID: 982599950}
   handObject: {fileID: 982599950}
   playerGun: {fileID: 30886}
+--- !u!114 &102979405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102979392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89946d002e30f84ca4978f2fb242ac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &112978996
 PrefabInstance:
   m_ObjectHideFlags: 0
