@@ -97,6 +97,7 @@ public class EnemyAIBase : MonoBehaviour
     {
         //Una vez detecta el target, lo persigue
         agent.SetDestination(target.position);
+        
     }
 
     void AttackTarget()
