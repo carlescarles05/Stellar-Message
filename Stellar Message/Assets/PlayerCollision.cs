@@ -12,8 +12,8 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // Cargar la escena de Game Over
-            //SceneManager.LoadScene("GameOver");
-            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+            SceneManager.LoadScene("LosePanel");
+            //SceneManager.LoadScene("LosePanel", LoadSceneMode.Single);
         }
     }
 }
