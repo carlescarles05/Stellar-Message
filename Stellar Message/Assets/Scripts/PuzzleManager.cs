@@ -13,6 +13,7 @@ public class PuzzleManager : MonoBehaviour
     public Transform pinkSlot;
     public Transform yellowSlot;
     public Transform greenSlot;
+    public GameObject targetObjectToDisable; // Objeto que se desactivará al completar el puzzle
 
     private bool pinkPlaced = false;
     private bool yellowPlaced = false;
@@ -43,6 +44,11 @@ public class PuzzleManager : MonoBehaviour
                 audioSource.Play();
             }
             Debug.Log("Estado del puzzle: " + puzzleCompleted);
+            // Desactivar el objeto objetivo
+            if (targetObjectToDisable != null)
+            {
+                targetObjectToDisable.SetActive(false);
+            }
 
         }
     }
