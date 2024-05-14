@@ -57,7 +57,7 @@ public class PuzzleManager : MonoBehaviour
         float distance = Vector3.Distance(objectPosition, slotPosition);
 
         // Si la distancia es menor que un cierto umbral, consideramos que el objeto está encima del slot
-        float threshold = 0.5f; // Puedes ajustar este valor según tus necesidades
+        float threshold = 1f; // Puedes ajustar este valor según tus necesidades
         return distance < threshold;
     }
 
