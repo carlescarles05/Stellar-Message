@@ -19,7 +19,7 @@ public class EnemyDamage : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         model = GameObject.Find("Body");
         modelRend = model.GetComponent<MeshRenderer>();
