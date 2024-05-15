@@ -61,7 +61,7 @@ public class EnemyAIBase : MonoBehaviour
         // Si detecta el target y está en rango de ataque: ATACA
         else if (targetInSightRange && targetInAttackRange) AttackTarget();
         // Si no detecta el target: PATRULLA
-        else Patroling();
+        
 
     }
 
@@ -106,6 +106,7 @@ public class EnemyAIBase : MonoBehaviour
     {
         //Una vez detecta el target, lo persigue
         agent.SetDestination(target.position);
+        LookAtTarget();
         // Calcular la dirección hacia el jugador
         Vector3 directionToTarget = (target.position - transform.position).normalized;
 
@@ -122,7 +123,7 @@ public class EnemyAIBase : MonoBehaviour
         //Cuando comienza a atacar, no se mueve (se persigue a sí mismo)
         agent.SetDestination(transform.position);
         //La IA mira directamente al target
-        transform.LookAt(target);
+        LookAtTarget();
 
         if (!alreadyAttacked)
         {
@@ -154,5 +155,12 @@ public class EnemyAIBase : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    void LookAtTarget()
+    {
+        Vector3 directionToTarget = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToTarget.x, 0, directionToTarget.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * agent.angularSpeed);
     }
 }
