@@ -68,10 +68,12 @@ public class EnemyAIBase : MonoBehaviour
 
     void Patroling()
     {
+        
         if (!walkPointSet)
         {
+            anim.SetBool("Run", false);
             //Si no existe punto al que dirigirse, inicia el método de crearlo
-            SearchWalkPoint();
+            SearchWalkPoint();    
         }
         else
         {
