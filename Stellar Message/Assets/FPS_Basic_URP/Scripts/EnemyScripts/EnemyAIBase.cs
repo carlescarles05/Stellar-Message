@@ -39,6 +39,7 @@ public class EnemyAIBase : MonoBehaviour
     {
         target = GameObject.Find("Player").transform; //Al inicio referencia el transform del Player, para poder perseguirlo cuando toca
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();   
     }
 
 
@@ -47,14 +48,7 @@ public class EnemyAIBase : MonoBehaviour
         // Chequear si el target está en los rangos de detección y de ataque
         targetInSightRange = Physics.CheckSphere(transform.position, sightRange, targetLayer);
         targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, targetLayer);
-        if (boost == true)
-        {
-            anim.SetBool("Run", false);
-        }
-        else
-        {
-            anim.SetBool("Run", true);
-        }
+     
         // Cambios dinámicos de estado de la IA
         // Si detecta el target y está fuera del rango de ataque: PERSIGUE
         if (targetInSightRange && !targetInAttackRange) ChaseTarget();
