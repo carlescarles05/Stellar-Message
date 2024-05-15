@@ -50,8 +50,6 @@ public class EnemyAIBase : MonoBehaviour
         targetInSightRange = Physics.CheckSphere(transform.position, sightRange, targetLayer);
         targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, targetLayer);
 
-
-
         // Cambios dinámicos de estado de la IA
         // Si detecta el target y está fuera del rango de ataque: PERSIGUE
         if (targetInSightRange && !targetInAttackRange)
@@ -63,14 +61,19 @@ public class EnemyAIBase : MonoBehaviour
         else if (targetInSightRange && targetInAttackRange) AttackTarget();
         // Si no detecta el target: PATRULLA
         
+        if(!targetInSightRange)
+        {
+            Patroling();
+        }
 
     }
 
     void Patroling()
     {
-        
+        Debug.Log("POP");
         if (!walkPointSet)
         {
+            
             anim.SetBool("Run", false);
             //Si no existe punto al que dirigirse, inicia el método de crearlo
             SearchWalkPoint();    
