@@ -648,7 +648,7 @@ Transform:
   - {fileID: 69335149}
   - {fileID: 1969457514}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &52981947
 GameObject:
@@ -1810,7 +1810,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 98c64de56b091ea46938a745b9a2041c,
         type: 3}
       propertyPath: m_Name
-      value: mounstruo1 (1)
+      value: mounstruo3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1974,7 +1974,7 @@ Transform:
   - {fileID: 712346400}
   - {fileID: 1725731243}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &148920506 stripped
 Transform:
@@ -2591,7 +2591,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7fc239e79b8bbab4b9ce8aff1403fa38,
         type: 3}
       propertyPath: m_Name
-      value: asset1 (4)
+      value: base1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3514,17 +3514,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 71bc58daeb043e140bf3b9f4bb79a4b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3791104
+      value: -0.379
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71bc58daeb043e140bf3b9f4bb79a4b7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.017487928
+      value: 0.0185
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71bc58daeb043e140bf3b9f4bb79a4b7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.007978888
+      value: -0.008
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71bc58daeb043e140bf3b9f4bb79a4b7,
         type: 3}
@@ -3682,17 +3682,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 755e6bdf6ef1ac947a593f6b43b45528,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3791104
+      value: -0.3785
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755e6bdf6ef1ac947a593f6b43b45528,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.017488517
+      value: 0.0206
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755e6bdf6ef1ac947a593f6b43b45528,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0068481276
+      value: -0.0101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 755e6bdf6ef1ac947a593f6b43b45528,
         type: 3}
@@ -4431,7 +4431,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8f16acd6aa9bbd04e8416a4f562f75d9,
         type: 3}
       propertyPath: m_Name
-      value: untitled
+      value: suelo2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8f16acd6aa9bbd04e8416a4f562f75d9,
         type: 3}
@@ -5601,7 +5601,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0b434e2b3782f0e4b96a398fda5d81be,
         type: 3}
       propertyPath: m_Name
-      value: asset3
+      value: cristal2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0b434e2b3782f0e4b96a398fda5d81be,
         type: 3}
@@ -10671,7 +10671,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9ef75c6673ed7d4f9bdf721f31ac295,
         type: 3}
       propertyPath: m_Name
-      value: untitled (6)
+      value: armario3
       objectReference: {fileID: 0}
     - target: {fileID: 976723959910379622, guid: f9ef75c6673ed7d4f9bdf721f31ac295,
         type: 3}
@@ -10912,7 +10912,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8bee46ec37ca89740ac5777c2d4176fe,
         type: 3}
       propertyPath: m_Name
-      value: untitled (7)
+      value: mesa2
       objectReference: {fileID: 0}
     - target: {fileID: 5008022236170083033, guid: 8bee46ec37ca89740ac5777c2d4176fe,
         type: 3}
@@ -11381,7 +11381,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03bbe5bb600f50841b1fd64cca1258e4,
         type: 3}
       propertyPath: m_Name
-      value: untitled (3)
+      value: pared1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03bbe5bb600f50841b1fd64cca1258e4,
         type: 3}
@@ -13290,7 +13290,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7b641c1708109d34c941e79f3a35fe31,
         type: 3}
       propertyPath: m_Name
-      value: untitled
+      value: luz techo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14440,7 +14440,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 38926fde8fd7cf04e863a9cb48ce9b32,
         type: 3}
       propertyPath: m_Name
-      value: asset4
+      value: caja
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 38926fde8fd7cf04e863a9cb48ce9b32,
         type: 3}
@@ -15765,7 +15765,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f9ef75c6673ed7d4f9bdf721f31ac295,
         type: 3}
       propertyPath: m_Name
-      value: untitled (5)
+      value: armario2
       objectReference: {fileID: 0}
     - target: {fileID: 976723959910379622, guid: f9ef75c6673ed7d4f9bdf721f31ac295,
         type: 3}
@@ -16106,7 +16106,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cb8328e2d2828454c838f8e998353670,
         type: 3}
       propertyPath: m_Name
-      value: untitled (2)
+      value: pared3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cb8328e2d2828454c838f8e998353670,
         type: 3}
@@ -16593,7 +16593,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ea66f17ad8a48dd4f825f4f81b8f4145,
         type: 3}
       propertyPath: m_Name
-      value: asset2
+      value: top2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16692,7 +16692,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2dd423023ec1c214ea78db5595bdde83,
         type: 3}
       propertyPath: m_Name
-      value: untitled (4)
+      value: pared4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2dd423023ec1c214ea78db5595bdde83,
         type: 3}
@@ -17080,7 +17080,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4901b94323c312e4dbdc8d22e610c71a,
         type: 3}
       propertyPath: m_Name
-      value: untitled (1)
+      value: pared2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4901b94323c312e4dbdc8d22e610c71a,
         type: 3}
@@ -17662,7 +17662,7 @@ Transform:
   - {fileID: 727978343}
   - {fileID: 1105395447}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010490470
 GameObject:
@@ -18219,7 +18219,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 47d68c3a2d51772449e63be4728c089d,
         type: 3}
       propertyPath: m_Name
-      value: asset6
+      value: tuberia
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 47d68c3a2d51772449e63be4728c089d,
         type: 3}
