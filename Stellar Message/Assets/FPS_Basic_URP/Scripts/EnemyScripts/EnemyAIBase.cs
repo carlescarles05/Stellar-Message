@@ -31,6 +31,8 @@ public class EnemyAIBase : MonoBehaviour
     [SerializeField] float attackRange; //Rango a partir del cual la IA ataca
     [SerializeField] bool targetInSightRange; //Bool que determina si el target está a distancia de detección
     [SerializeField] bool targetInAttackRange; //Bool que determina si el target está a distancia de ataque
+    public bool boost;
+    public Animator anim;
 
 
     private void Awake()
@@ -45,7 +47,14 @@ public class EnemyAIBase : MonoBehaviour
         // Chequear si el target está en los rangos de detección y de ataque
         targetInSightRange = Physics.CheckSphere(transform.position, sightRange, targetLayer);
         targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, targetLayer);
-
+        if (boost == true)
+        {
+            anim.SetBool("Run", false);
+        }
+        else
+        {
+            anim.SetBool("Run", true);
+        }
         // Cambios dinámicos de estado de la IA
         // Si detecta el target y está fuera del rango de ataque: PERSIGUE
         if (targetInSightRange && !targetInAttackRange) ChaseTarget();

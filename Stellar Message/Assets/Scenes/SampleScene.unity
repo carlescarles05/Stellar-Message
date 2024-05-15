@@ -1249,8 +1249,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102979392}
-  m_LocalRotation: {x: -0, y: 0.7457571, z: -0, w: 0.666218}
-  m_LocalPosition: {x: -27.415, y: 0.587, z: 0.103}
+  m_LocalRotation: {x: -0, y: 0.8767343, z: -0, w: 0.480975}
+  m_LocalPosition: {x: 17.6, y: 0.587, z: 5.04}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1258,7 +1258,7 @@ Transform:
   - {fileID: 446247672}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 96.448, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 122.502, z: 0}
 --- !u!143 &102979398
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6388,6 +6388,8 @@ MonoBehaviour:
   attackRange: 0
   targetInSightRange: 0
   targetInAttackRange: 0
+  boost: 0
+  anim: {fileID: 0}
 --- !u!195 &876426149
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17957,6 +17959,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3532916943402769828, guid: 1d470502386fbf4408afd8a7e1bd0ab2,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1957908521}
     - target: {fileID: 3532916943402769828, guid: 1d470502386fbf4408afd8a7e1bd0ab2,
         type: 3}
       propertyPath: target
