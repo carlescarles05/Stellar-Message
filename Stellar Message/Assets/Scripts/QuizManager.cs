@@ -24,6 +24,7 @@ public class QuizManager : MonoBehaviour
 
     int totalQuestions = 0;
     public int score;
+    public GameObject objectToDisable; // Objeto que se desactivará al responder correctamente las tres preguntas
 
     private void Start()
     {
@@ -55,6 +56,11 @@ public class QuizManager : MonoBehaviour
         {
             //Reproducir el efecto de sonido 
             audioSource.Play();       
+        }
+        // Desactivar el objeto deseado
+        if (objectToDisable != null)
+        {
+            objectToDisable.SetActive(false);
         }
     }
 
