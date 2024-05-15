@@ -33,6 +33,7 @@ public class EnemyAIBase : MonoBehaviour
     [SerializeField] bool targetInAttackRange; //Bool que determina si el target está a distancia de ataque
     public bool boost;
     public Animator anim;
+    public float rotation;
 
 
     private void Awake()
@@ -104,17 +105,23 @@ public class EnemyAIBase : MonoBehaviour
 
     void ChaseTarget()
     {
-        //Una vez detecta el target, lo persigue
+        // Calculamos la dirección hacia el objetivo desde la posición del objeto actual
+        Vector3 direccion = target.position - transform.position;
+
+        // Calculamos el Quaternion de rotación para que el objeto actual mire hacia el objetivo
+        Quaternion rotacion = Quaternion.LookRotation(direccion);
+
+        // Aplicamos la rotación al objeto actual solo en el eje Y
+        //transform.rotation = Quaternion.Euler(0, rotacion.eulerAngles.y, 0);
+        float anguloY = rotacion.eulerAngles.y;
+
+        // Invertimos el ángulo de rotación en el eje Y
+        float anguloYInvertido = anguloY > rotation ? anguloY - rotation : anguloY + rotation;
+
+        // Aplicamos la rotación al objeto actual solo en el eje Y, invertida
+        transform.rotation = Quaternion.Euler(0, anguloYInvertido, 0);
+        // Establece el destino del agente para que se mueva hacia el objetivo
         agent.SetDestination(target.position);
-        LookAtTarget();
-        // Calcular la dirección hacia el jugador
-        Vector3 directionToTarget = (target.position - transform.position).normalized;
-
-        // Calcular la rotación necesaria para mirar hacia el jugador
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(directionToTarget.x, 0, directionToTarget.z));
-
-        // Aplicar la rotación gradualmente
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * agent.angularSpeed);
 
     }
 
