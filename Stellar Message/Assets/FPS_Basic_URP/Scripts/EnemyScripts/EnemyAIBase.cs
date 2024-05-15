@@ -48,10 +48,16 @@ public class EnemyAIBase : MonoBehaviour
         // Chequear si el target está en los rangos de detección y de ataque
         targetInSightRange = Physics.CheckSphere(transform.position, sightRange, targetLayer);
         targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, targetLayer);
-     
+
+
+
         // Cambios dinámicos de estado de la IA
         // Si detecta el target y está fuera del rango de ataque: PERSIGUE
-        if (targetInSightRange && !targetInAttackRange) ChaseTarget();
+        if (targetInSightRange && !targetInAttackRange)
+        {
+            ChaseTarget(); 
+            anim.SetBool("Run", true);
+        }
         // Si detecta el target y está en rango de ataque: ATACA
         else if (targetInSightRange && targetInAttackRange) AttackTarget();
         // Si no detecta el target: PATRULLA
