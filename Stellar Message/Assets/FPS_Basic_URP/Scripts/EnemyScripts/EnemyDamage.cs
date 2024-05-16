@@ -19,7 +19,7 @@ public class EnemyDamage : MonoBehaviour
 
     void Awake()
     {
-        model = GameObject.Find("Body");
+        model = GameObject.Find("CAPULLO_1");
         modelRend = model.GetComponent<MeshRenderer>();
         original = modelRend.material;
         health = maxHealth;
