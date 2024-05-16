@@ -17,8 +17,6 @@ public class EnemyDamage : MonoBehaviour
     GameObject model; //Ref al objeto que contiene el mesh del personaje (solo en caso de que el mesh vaya aparte del código)
     MeshRenderer modelRend; //Ref al meshRenderer del objeto con modelado (permite acceder a su material)
 
-
-    // Start is called before the first frame update
     void Awake()
     {
         model = GameObject.Find("Body");

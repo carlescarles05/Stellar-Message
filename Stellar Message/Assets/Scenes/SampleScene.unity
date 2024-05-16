@@ -1252,7 +1252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102979392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.47, y: 0.587, z: -15.8}
+  m_LocalPosition: {x: -23.4, y: 0.587, z: -15.6}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1537,7 +1537,7 @@ MonoBehaviour:
     m_Bits: 64
   weaponSound: {fileID: 0}
   muzzleFlash: {fileID: 1100342070}
-  damage: 5
+  damage: 10
   range: 100
   spread: 0
   shootingCooldown: 0.25
@@ -18560,6 +18560,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CAPULLO_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097344243816477298, guid: 912bb43e4043c1c4cb847ca4f03c2b51,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097344243816477298, guid: 912bb43e4043c1c4cb847ca4f03c2b51,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 8900240110255647068, guid: 912bb43e4043c1c4cb847ca4f03c2b51,
         type: 3}

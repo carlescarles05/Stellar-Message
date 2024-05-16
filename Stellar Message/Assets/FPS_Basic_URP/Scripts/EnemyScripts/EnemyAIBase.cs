@@ -70,7 +70,6 @@ public class EnemyAIBase : MonoBehaviour
 
     void Patroling()
     {
-        Debug.Log("POP");
         if (!walkPointSet)
         {
             
