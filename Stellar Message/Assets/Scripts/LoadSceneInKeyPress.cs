@@ -14,12 +14,11 @@ public class LoadSceneInKeyPress : MonoBehaviour
         // Verifica que el objeto que entra es el jugador (por ejemplo, con el tag "Player")
         if (other.CompareTag("Player"))
         {
-            // Desbloquea y muestra el cursor
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
 
             // Carga la escena especificada
             SceneManager.LoadScene("final");
+            // Desbloquea y muestra el cursor
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
