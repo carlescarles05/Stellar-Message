@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LosePanel.unity
     guid: 1effa911177168545b8fbccd3df4c9be
+  - enabled: 1
+    path: Assets/Scenes/final.unity
+    guid: 815c9233cad8cf24fa8733d2a3e4c79d
   m_configObjects: {}
